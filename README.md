@@ -38,3 +38,6 @@ ids. It's best to keep the json sorted by season/episode.
 
 Also, I'm not sure how tolerant github is towards vulgar language, so
 let's not overdo it, alright?^^
+
+## Anything else?
+I also made a [Telegram Bot](https://github.com/TPei/Random-Quotes-Telegram-Bot) that you can use to bring these quotes to your Telegram chats.
