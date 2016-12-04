@@ -2,7 +2,7 @@
 Random Rick and Morty quotes (or whatever quote_file you wish to supply)
 
 ## Demo
-Running on [aws](http://randomquotes.eu-central-1.elasticbeanstalk.com/)
+Running on [aws](http://rickandmortyquotes.eu-central-1.elasticbeanstalk.com/)
 
 ## What is this?
 Simple sinatra app that returns a random quote given a provided quotes
@@ -10,8 +10,8 @@ file...
 
 ## What can it do
 Features:
-- [x] / returns a random json quote
-- [x] json documents supply permalink that corresponds to a /:id route on the
+- [x] `/` returns a random json quote
+- [x] json documents supply permalink that corresponds to a `/:id` route on the
   server
 - [ ] display quote as rendered html version
 

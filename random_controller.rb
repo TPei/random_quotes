@@ -2,7 +2,7 @@ require 'sinatra'
 require './app/random_parser'
 
 # add url for your service (used for permalinking)
-URL = 'http://randomquotes.eu-central-1.elasticbeanstalk.com'
+URL = 'http://rickandmortyquotes.eu-central-1.elasticbeanstalk.com'
 
 class RandomController < Sinatra::Base
   get '/info' do
