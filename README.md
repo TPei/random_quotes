@@ -8,11 +8,12 @@ Running on [aws](http://randomquotes.eu-central-1.elasticbeanstalk.com/)
 Simple sinatra app that returns a random quote given a provided quotes
 file...
 
-## What can it to
+## What can it do
 Features:
 - [x] / returns a random json quote
-- [x] add permalink function using the json ids
-- [ ] add route for html
+- [x] json documents supply permalink that corresponds to a route on the
+  server
+- [ ] display quote as rendered html version
 
 ## Can I use this for anything?
 Sure, make your own /awesome/ quotes services by deploying this with a
