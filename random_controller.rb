@@ -1,8 +1,6 @@
 require 'sinatra'
 require './app/random_parser'
-
-# add url for your service (used for permalinking)
-URL = 'http://rickandmortyquotes.eu-central-1.elasticbeanstalk.com'
+require 'uri'
 
 class RandomController < Sinatra::Base
   get '/info' do
@@ -53,8 +51,12 @@ class RandomController < Sinatra::Base
   end
 
   def permalink(id, html: false)
-    return "#{URL}/#{id}/html" if html
-    "#{URL}/#{id}"
+    return "#{host_url}#{id}/html" if html
+    "#{host_url}#{id}"
+  end
+
+  def host_url
+    URI.join(url, "/").to_s
   end
 
   def htmlize(quote)
