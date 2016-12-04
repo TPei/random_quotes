@@ -11,17 +11,35 @@ class RandomController < Sinatra::Base
 
   get '/' do
     quote = RandomParser.random_entry(file)
-    quote['permalink'] = "#{URL}/#{quote['id']}"
+    quote['permalink'] = permalink quote['id']
 
     quote.to_json
+  end
+
+  get '/html' do
+    quote = RandomParser.random_entry(file)
+    quote['permalink'] = permalink quote['id'], html: true
+
+    htmlize quote
   end
 
   get '/:id' do |id|
     quotes = RandomParser.new(file).quotes
     quotes.select! { |quote| quote['id'] == id }
     quote = quotes[0]
-    quote['permalink'] = "#{URL}/#{quote['id']}"
+    quote['permalink'] = permalink quote['id']
+    puts permalink quote['id']
+
     quote.to_json
+  end
+
+  get '/:id/html' do |id|
+    quotes = RandomParser.new(file).quotes
+    quotes.select! { |quote| quote['id'] == id }
+    quote = quotes[0]
+    quote['permalink'] = permalink quote['id'], html: true
+
+    htmlize quote
   end
 
   private
@@ -32,6 +50,21 @@ class RandomController < Sinatra::Base
 
     # read as file and hand to random_parser
     @file ||= File.read(file_path)
+  end
+
+  def permalink(id, html: false)
+    return "#{URL}/#{id}/html" if html
+    "#{URL}/#{id}"
+  end
+
+  def htmlize(quote)
+    "
+    <h1>Rick and Morty Quotes</h1>
+    <p>\"#{quote['what']}\"</p>
+    <p> - #{quote['who']}</p>
+    <p>#{quote['where']} #{quote['when']}</p>
+    <a href=\"#{quote['permalink']}\">Permalink</a>
+    "
   end
 end
 
