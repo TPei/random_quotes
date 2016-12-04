@@ -7,6 +7,10 @@ class RandomParser
     @quotes = data_hash['quotes']
   end
 
+  def quotes
+    @quotes
+  end
+
   def random_entry
     @quotes.sample
   end
