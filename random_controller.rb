@@ -60,13 +60,13 @@ class RandomController < Sinatra::Base
   end
 
   def htmlize(quote)
-    "
+    <<-heredoc
     <h1>Rick and Morty Quotes</h1>
     <p>\"#{quote['what']}\"</p>
     <p> - #{quote['who']}</p>
     <p>#{quote['where']} #{quote['when']}</p>
     <a href=\"#{quote['permalink']}\">Permalink</a>
-    "
+    heredoc
   end
 end
 
