@@ -1,0 +1,11 @@
+{
+  "quotes": [
+    {
+      "id": "some id to be used for permalinking",
+      "who": "who said it",
+      "what": "what was said",
+      "where": "what show / movie / book",
+      "when": "which season / episode / chapter"
+    }
+  ]
+}
