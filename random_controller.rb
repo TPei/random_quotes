@@ -6,7 +6,7 @@ URL = 'http://randomquotes.eu-central-1.elasticbeanstalk.com'
 
 class RandomController < Sinatra::Base
   get '/info' do
-    'HELLO API-WORLD'
+    'Hello! / returns random quote from a quote_file. /:id returns a specific quote from file'
   end
 
   get '/' do
