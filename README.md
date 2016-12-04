@@ -11,7 +11,7 @@ file...
 ## What can it do
 Features:
 - [x] / returns a random json quote
-- [x] json documents supply permalink that corresponds to a route on the
+- [x] json documents supply permalink that corresponds to a /:id route on the
   server
 - [ ] display quote as rendered html version
 
