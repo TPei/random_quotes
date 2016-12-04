@@ -15,7 +15,7 @@ Features:
 - [x] `/` returns a random json quote
 - [x] json documents supply permalink that corresponds to a `/:id` route on the
   server
-- [ ] display quote as rendered html version
+- [x] display quote as rendered html version
 
 ## Can I use this for anything?
 Sure, make your own /awesome/ quotes services by deploying this with a
@@ -25,9 +25,7 @@ custom quotes file
 I will make this a bit easier in the future, for now:
 - provide you own quotes file (json, look at the example_quotes.json)
 - link it in the RandomController
-- if you have this deployed somewhere and want to have proper
-  permalinks, adapt the URL in RandomController to reflect your
-environment
+- the permalink url is inferred from the current host url
 - then simply zip it and upload it to an elasticbeanstalk environment (or
 heroku or whatever)
 
