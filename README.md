@@ -1,12 +1,14 @@
 # random_quotes
 Random Rick and Morty quotes (or whatever quote_file you wish to supply)
 
-## Demo
-Running on [aws](http://rickandmortyquotes.eu-central-1.elasticbeanstalk.com/)
-
 ## What is this?
 Simple sinatra app that returns a random quote given a provided quotes
 file...
+
+## Demo
+Running on [aws](http://rickandmortyquotes.eu-central-1.elasticbeanstalk.com/)
+
+![curl demo](https://raw.githubusercontent.com/TPei/random_quotes/master/api_demo.png)
 
 ## What can it do
 Features:
