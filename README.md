@@ -16,7 +16,9 @@ Features:
 - [x] `/` returns a random json quote
 - [x] json documents supply permalink that corresponds to a `/:id` route on the
   server
-- [x] display quote as rendered html version
+- [x] `/html` displays random quote as rendered html version
+- [x] `/:id/html` displays specific quote as rendered html version
+- [x] returns 404 if the id is not found
 
 ## Can I use this for anything?
 Sure, make your own /awesome/ quotes services by deploying this with a
