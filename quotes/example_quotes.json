@@ -1,7 +1,7 @@
 {
   "quotes": [
     {
-      "id": "some id to be used for permalinking",
+      "id": "some_id_to_be_used_for_permalinking",
       "who": "who said it",
       "what": "what was said",
       "where": "what show / movie / book",
