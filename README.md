@@ -11,7 +11,7 @@ Running on [aws](http://rickandmortyquotes.eu-central-1.elasticbeanstalk.com/)
 
 ![curl demo](https://raw.githubusercontent.com/TPei/random_quotes/master/api_demo.png)
 
-## What can it do
+## What can it do?
 Features:
 - [x] `/` returns a random json quote
 - [x] json documents supply permalink that corresponds to a `/:id` route on the
