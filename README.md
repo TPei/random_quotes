@@ -25,9 +25,8 @@ Sure, make your own /awesome/ quotes services by deploying this with a
 custom quotes file
 
 ### How do I adapt this
-I will make this a bit easier in the future, for now:
 - provide your own quotes file (json, look at the example_quotes.json)
-- set the FILEPATH env var
+- set the FILEPATH env var (defaults to ./quotes/quotes.json)
 - the permalink url is inferred from the current host url
 - then simply zip it and upload it to an elasticbeanstalk environment (or
 heroku or whatever)
