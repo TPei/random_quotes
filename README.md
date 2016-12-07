@@ -1,4 +1,5 @@
-# random_quotes
+# random_quotes [![Build Status](https://travis-ci.org/TPei/random_quotes.svg?branch=master)](https://travis-ci.org/TPei/random_quotes)
+
 Random Rick and Morty quotes (or whatever quote_file you wish to supply)
 
 ## What is this?
