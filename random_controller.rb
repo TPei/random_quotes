@@ -26,6 +26,7 @@ class RandomController < Sinatra::Base
     quotes = RandomParser.new(file).quotes
     quotes.select! { |quote| quote['id'] == id }
     quote = quotes[0]
+    return 404 if quote.nil?
     quote['permalink'] = permalink quote['id']
     puts permalink quote['id']
 
@@ -36,6 +37,7 @@ class RandomController < Sinatra::Base
     quotes = RandomParser.new(file).quotes
     quotes.select! { |quote| quote['id'] == id }
     quote = quotes[0]
+    return 404 if quote.nil?
     quote['permalink'] = permalink quote['id'], html: true
 
     htmlize quote

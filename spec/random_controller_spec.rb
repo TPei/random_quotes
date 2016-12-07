@@ -70,7 +70,7 @@ RSpec.describe RandomController do
 
       it 'returns a 404' do
         get "/#{@id}"
-        expect(last_response.status).to eq 500
+        expect(last_response.status).to eq 404
       end
     end
   end
@@ -125,7 +125,7 @@ RSpec.describe RandomController do
 
       it 'returns a 404' do
         get "/#{@id}/html"
-        expect(last_response.status).to eq 500
+        expect(last_response.status).to eq 404
       end
     end
   end
