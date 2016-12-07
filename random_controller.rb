@@ -1,6 +1,7 @@
 require 'sinatra'
 require './app/random_parser'
 require 'uri'
+require 'dotenv'
 
 class RandomController < Sinatra::Base
   get '/info' do
@@ -43,8 +44,8 @@ class RandomController < Sinatra::Base
   private
 
   def file
-    # whatever file you want to use
-    file_path = './quotes/rick_and_morty.json'
+    Dotenv.load
+    file_path = ENV['FILEPATH'] || './quotes/quotes.json'
 
     # read as file and hand to random_parser
     @file ||= File.read(file_path)
