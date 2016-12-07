@@ -23,7 +23,7 @@ custom quotes file
 
 ### How do I adapt this
 I will make this a bit easier in the future, for now:
-- provide you own quotes file (json, look at the example_quotes.json)
+- provide your own quotes file (json, look at the example_quotes.json)
 - link it in the RandomController
 - the permalink url is inferred from the current host url
 - then simply zip it and upload it to an elasticbeanstalk environment (or
