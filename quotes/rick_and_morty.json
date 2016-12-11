@@ -232,11 +232,67 @@
       "when": "Season 2, Episode 1"
     },
     {
+      "id": "2x4.001",
+      "who": "Rick",
+      "what": "Is anyone here even real?! AM I THE ONLY REAL PERSON ON EARTH!?!",
+      "where": "Rick and Morty",
+      "when": "Season 2, Episode 4"
+    },
+    {
+      "id": "2x4.002",
+      "who": "Reverse Giraffe",
+      "what": "Maybe. Or maybe—just maybe—we're all real. You know me, I'm Reverse Giraffe. I have a short neck and legs. I went to college with Hamurai.",
+      "where": "Rick and Morty",
+      "when": "Season 2, Episode 4"
+    },
+    {
       "id": "2x5.001",
       "who": "Rick",
       "what": "Oh yeah, you gotta get schwifty",
       "where": "Rick and Morty",
       "when": "Season 2, Episode 5"
+    },
+    {
+      "id": "2x5.002",
+      "who": "Morty",
+      "what": "Stop saying it like it's a thing! You made it up!",
+      "where": "Rick and Morty",
+      "when": "Season 2, Episode 5"
+    },
+    {
+      "id": "2x5.003",
+      "who": "Cromulon",
+      "what": "SHOW ME WHAT YOU GOT!",
+      "where": "Rick and Morty",
+      "when": "Season 2, Episode 5"
+    },
+    {
+      "id": "2x5.004",
+      "who": "Cromulon",
+      "what": "I WANT TO SEE WHAT YOU GOT!",
+      "where": "Rick and Morty",
+      "when": "Season 2, Episode 5"
+    },
+    {
+      "id": "2x5.005",
+      "who": "Cromulon",
+      "what": "NOT COOL!",
+      "where": "Rick and Morty",
+      "when": "Season 2, Episode 5"
+    },
+    {
+      "id": "2x7.001",
+      "who": "Tiny Rick",
+      "what": "Huntin' a vampire with my grandkids!! F*CK!! TINY RI-I-ICK!!!",
+      "where": "Rick and Morty",
+      "when": "Season 2, Episode 7"
+    },
+    {
+      "id": "2x7.002",
+      "who": "Vampire Master",
+      "what": "Jesus fucking Christ! From now on, no more of this clever-name bullshit. When a vampire is pretending to be a human, they can just call themselves Alan Jefferson or something like that.",
+      "where": "Rick and Morty",
+      "when": "Season 2, Episode 7"
     }
   ]
 }
